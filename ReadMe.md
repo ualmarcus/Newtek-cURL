@@ -1,3 +1,6 @@
+Netwek NDI Remote Control with cURL
+------------------
+
 It is  arbitrary to target and configure what Studio Monitor is doing (as long as you have not set a password, there are security implications, will add info for an authenticate the session when time permits) - this should give a starting point for all parameters: 
 
 Accessing the source list and current configuration: 
@@ -17,7 +20,7 @@ returns available NDI sources from this studio monitors perspective:
 ```
 
 
-To post a config change:
+To post a config change for the primary NDI source:
 -----
 
 Main Window NDI source setting, Change a Source from something to 'None':
@@ -51,7 +54,10 @@ curl -H "Content-Type: application/json" -X POST -d '{"version":1,"decorations":
 curl -H "Content-Type: application/json" -X POST -d '{"version":1,"decorations":{"picture_in_picture": false}}' http://[target studio monitorIP]/v1/configuration
 ```
 
-Example configuration settings (any Studio Monitor 3.5.x / 3.7.x setting can be targeted):
+Example configuration settings 
+------------------
+
+(any Studio Monitor 3.5.x / 3.7.x setting can be targeted):
 
 Switch on / off Hardware Acceleration:
 ```
