@@ -1,4 +1,4 @@
-Netwek NDI Remote Control with cURL
+Newtek NDI Remote Control with cURL
 ------------------
 
 It is  arbitrary to target and configure what Studio Monitor is doing (as long as you have not set a password, there are security implications, will add info for an authenticate the session when time permits) - this should give a starting point for all parameters: 
